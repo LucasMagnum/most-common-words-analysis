@@ -1,6 +1,6 @@
 import unittest
 
-from words_analysis import get_most_common_words
+from analyzer import common_words
 
 
 class TestWordsAnalysis(unittest.TestCase):
@@ -23,5 +23,5 @@ class TestWordsAnalysis(unittest.TestCase):
             ('java', 2)
         ]
 
-        most_common_words = get_most_common_words(data, 2)
+        most_common_words = common_words.get(data, 2)
         assert most_common_words == expected

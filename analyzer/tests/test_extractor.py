@@ -1,6 +1,6 @@
 import unittest
 
-from words_extractor import extract_words_from_html
+from analyzer import extractor
 
 
 class TestWordsExtractor(unittest.TestCase):
@@ -42,5 +42,5 @@ class TestWordsExtractor(unittest.TestCase):
             'python'
         ]
 
-        words = extract_words_from_html(html)
+        words = extractor.from_html(html)
         assert sorted(words) == sorted(expected_words)

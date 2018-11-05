@@ -1,5 +1,5 @@
-Word Analysis
-=============
+Words Analyzer
+===============
 
 This project was created to analyze an input and return the most common words found.
 

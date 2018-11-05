@@ -2,7 +2,7 @@ import re
 from html.parser import HTMLParser
 
 
-def extract_words_from_html(html):
+def from_html(html):
     parser = WordsHTMLParser()
     parser.feed(html)
 
